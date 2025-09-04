@@ -191,7 +191,7 @@ Module['FS_createPath']('/', 'assets', true, true);
   }
 
  }
- loadPackage({"files": [{"start": 0, "audio": 0, "end": 2374264, "filename": "/assets/JetBrainsMonoNLNerdFont-Regular.ttf"}], "remote_package_size": 2374264, "package_uuid": "4d369813-adfc-4f53-8b23-86f5348ae616"});
+ loadPackage({"files": [{"start": 0, "audio": 0, "end": 2374264, "filename": "/assets/JetBrainsMonoNLNerdFont-Regular.ttf"}], "remote_package_size": 2374264, "package_uuid": "42b3d7c2-4563-4b60-8e7c-6e0df75577b1"});
 
 })();
 
