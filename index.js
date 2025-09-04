@@ -191,7 +191,7 @@ Module['FS_createPath']('/', 'assets', true, true);
   }
 
  }
- loadPackage({"files": [{"start": 0, "audio": 0, "end": 3030, "filename": "/assets/Logo.png"}, {"start": 3030, "audio": 0, "end": 2377294, "filename": "/assets/JetBrainsMonoNLNerdFont-Regular.ttf"}], "remote_package_size": 2377294, "package_uuid": "057603a0-8832-4b3b-a8ba-890615576741"});
+ loadPackage({"files": [{"start": 0, "audio": 0, "end": 3030, "filename": "/assets/Logo.png"}, {"start": 3030, "audio": 0, "end": 2377294, "filename": "/assets/JetBrainsMonoNLNerdFont-Regular.ttf"}], "remote_package_size": 2377294, "package_uuid": "d202330a-1792-4f8e-8141-f0002eb58036"});
 
 })();
 
@@ -1396,11 +1396,11 @@ function updateGlobalBufferAndViews(buf) {
 
 
 var STATIC_BASE = 1024,
-    STACK_BASE = 154912,
+    STACK_BASE = 155008,
     STACKTOP = STACK_BASE,
-    STACK_MAX = 5397792,
-    DYNAMIC_BASE = 5397792,
-    DYNAMICTOP_PTR = 154880;
+    STACK_MAX = 5397888,
+    DYNAMIC_BASE = 5397888,
+    DYNAMICTOP_PTR = 154976;
 
 assert(STACK_BASE % 16 === 0, 'stack must start aligned');
 assert(DYNAMIC_BASE % 16 === 0, 'heap must start aligned');
@@ -1949,7 +1949,7 @@ function _emscripten_asm_const_iiii(code, a0, a1, a2) {
 
 
 
-// STATICTOP = STATIC_BASE + 153888;
+// STATICTOP = STATIC_BASE + 153984;
 /* global initializers */  __ATINIT__.push({ func: function() { ___emscripten_environ_constructor() } });
 
 
@@ -1960,7 +1960,7 @@ function _emscripten_asm_const_iiii(code, a0, a1, a2) {
 
 
 /* no memory initializer */
-var tempDoublePtr = 154896
+var tempDoublePtr = 154992
 assert(tempDoublePtr % 8 == 0);
 
 function copyTempFloat(ptr) { // functions, because inlining this code increases code size too much
