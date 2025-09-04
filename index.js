@@ -38,8 +38,8 @@ Module.expectedDataFileDownloads++;
     } else {
       throw 'using preloaded data can only be done on a web page or in a web worker';
     }
-    var PACKAGE_NAME = 'build/app.data';
-    var REMOTE_PACKAGE_BASE = 'app.data';
+    var PACKAGE_NAME = 'build/index.data';
+    var REMOTE_PACKAGE_BASE = 'index.data';
     if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
       Module['locateFile'] = Module['locateFilePackage'];
       err('warning: you defined Module.locateFilePackage, that has been renamed to Module.locateFile (using your locateFilePackage for now)');
@@ -167,10 +167,10 @@ Module['FS_createPath']('/', 'assets', true, true);
           for (var i = 0; i < files.length; ++i) {
             DataRequest.prototype.requests[files[i].filename].onload();
           }
-              Module['removeRunDependency']('datafile_build/app.data');
+              Module['removeRunDependency']('datafile_build/index.data');
 
     };
-    Module['addRunDependency']('datafile_build/app.data');
+    Module['addRunDependency']('datafile_build/index.data');
   
     if (!Module.preloadResults) Module.preloadResults = {};
   
@@ -191,7 +191,7 @@ Module['FS_createPath']('/', 'assets', true, true);
   }
 
  }
- loadPackage({"files": [{"start": 0, "audio": 0, "end": 2374264, "filename": "/assets/JetBrainsMonoNLNerdFont-Regular.ttf"}], "remote_package_size": 2374264, "package_uuid": "32a2019b-2903-4d39-9852-d8cb188b010b"});
+ loadPackage({"files": [{"start": 0, "audio": 0, "end": 2374264, "filename": "/assets/JetBrainsMonoNLNerdFont-Regular.ttf"}], "remote_package_size": 2374264, "package_uuid": "041851b0-0e7a-45c5-bfb4-4321a091af2f"});
 
 })();
 
@@ -1742,7 +1742,7 @@ function isDataURI(filename) {
 
 
 
-var wasmBinaryFile = 'app.wasm';
+var wasmBinaryFile = 'index.wasm';
 if (!isDataURI(wasmBinaryFile)) {
   wasmBinaryFile = locateFile(wasmBinaryFile);
 }
