@@ -191,7 +191,7 @@ Module['FS_createPath']('/', 'assets', true, true);
   }
 
  }
- loadPackage({"files": [{"start": 0, "audio": 0, "end": 2374264, "filename": "/assets/JetBrainsMonoNLNerdFont-Regular.ttf"}], "remote_package_size": 2374264, "package_uuid": "b9d10a21-93d4-4d85-9195-5b2f435b1d8b"});
+ loadPackage({"files": [{"start": 0, "audio": 0, "end": 2374264, "filename": "/assets/JetBrainsMonoNLNerdFont-Regular.ttf"}], "remote_package_size": 2374264, "package_uuid": "075dcb04-72dc-4d2f-8951-82ab06b54f08"});
 
 })();
 
@@ -1396,11 +1396,11 @@ function updateGlobalBufferAndViews(buf) {
 
 
 var STATIC_BASE = 1024,
-    STACK_BASE = 154768,
+    STACK_BASE = 154864,
     STACKTOP = STACK_BASE,
-    STACK_MAX = 5397648,
-    DYNAMIC_BASE = 5397648,
-    DYNAMICTOP_PTR = 154736;
+    STACK_MAX = 5397744,
+    DYNAMIC_BASE = 5397744,
+    DYNAMICTOP_PTR = 154832;
 
 assert(STACK_BASE % 16 === 0, 'stack must start aligned');
 assert(DYNAMIC_BASE % 16 === 0, 'heap must start aligned');
@@ -1949,7 +1949,7 @@ function _emscripten_asm_const_iiii(code, a0, a1, a2) {
 
 
 
-// STATICTOP = STATIC_BASE + 153744;
+// STATICTOP = STATIC_BASE + 153840;
 /* global initializers */  __ATINIT__.push({ func: function() { ___emscripten_environ_constructor() } });
 
 
@@ -1960,7 +1960,7 @@ function _emscripten_asm_const_iiii(code, a0, a1, a2) {
 
 
 /* no memory initializer */
-var tempDoublePtr = 154752
+var tempDoublePtr = 154848
 assert(tempDoublePtr % 8 == 0);
 
 function copyTempFloat(ptr) { // functions, because inlining this code increases code size too much
