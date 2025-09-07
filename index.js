@@ -191,7 +191,7 @@ Module['FS_createPath']('/', 'assets', true, true);
   }
 
  }
- loadPackage({"files": [{"start": 0, "audio": 0, "end": 3030, "filename": "/assets/Logo.png"}, {"start": 3030, "audio": 0, "end": 2377294, "filename": "/assets/JetBrainsMonoNLNerdFont-Regular.ttf"}], "remote_package_size": 2377294, "package_uuid": "a841e96a-26df-4048-bf51-0bef35e79e50"});
+ loadPackage({"files": [{"start": 0, "audio": 0, "end": 3030, "filename": "/assets/Logo.png"}, {"start": 3030, "audio": 0, "end": 2377294, "filename": "/assets/JetBrainsMonoNLNerdFont-Regular.ttf"}], "remote_package_size": 2377294, "package_uuid": "b25a2ddb-68f3-47a4-9e92-cb18e0cc5bb9"});
 
 })();
 
@@ -1396,11 +1396,11 @@ function updateGlobalBufferAndViews(buf) {
 
 
 var STATIC_BASE = 1024,
-    STACK_BASE = 155168,
+    STACK_BASE = 155152,
     STACKTOP = STACK_BASE,
-    STACK_MAX = 5398048,
-    DYNAMIC_BASE = 5398048,
-    DYNAMICTOP_PTR = 155136;
+    STACK_MAX = 5398032,
+    DYNAMIC_BASE = 5398032,
+    DYNAMICTOP_PTR = 155120;
 
 assert(STACK_BASE % 16 === 0, 'stack must start aligned');
 assert(DYNAMIC_BASE % 16 === 0, 'heap must start aligned');
@@ -1949,7 +1949,7 @@ function _emscripten_asm_const_iiii(code, a0, a1, a2) {
 
 
 
-// STATICTOP = STATIC_BASE + 154144;
+// STATICTOP = STATIC_BASE + 154128;
 /* global initializers */  __ATINIT__.push({ func: function() { ___emscripten_environ_constructor() } });
 
 
@@ -1960,7 +1960,7 @@ function _emscripten_asm_const_iiii(code, a0, a1, a2) {
 
 
 /* no memory initializer */
-var tempDoublePtr = 155152
+var tempDoublePtr = 155136
 assert(tempDoublePtr % 8 == 0);
 
 function copyTempFloat(ptr) { // functions, because inlining this code increases code size too much
@@ -9289,6 +9289,8 @@ function copyTempDouble(ptr) {
 
    
 
+  var _llvm_cos_f64=Math_cos;
+
   var _llvm_sin_f64=Math_sin;
 
   function _llvm_stackrestore(p) {
@@ -9901,6 +9903,7 @@ var asmLibraryArg = {
   "_emscripten_set_wheel_callback_on_thread": _emscripten_set_wheel_callback_on_thread,
   "_getenv": _getenv,
   "_gettimeofday": _gettimeofday,
+  "_llvm_cos_f64": _llvm_cos_f64,
   "_llvm_sin_f64": _llvm_sin_f64,
   "_llvm_stackrestore": _llvm_stackrestore,
   "_llvm_stacksave": _llvm_stacksave,
