@@ -191,7 +191,7 @@ Module['FS_createPath']('/', 'assets', true, true);
   }
 
  }
- loadPackage({"files": [{"start": 0, "audio": 0, "end": 3030, "filename": "/assets/Logo.png"}, {"start": 3030, "audio": 0, "end": 2377294, "filename": "/assets/JetBrainsMonoNLNerdFont-Regular.ttf"}], "remote_package_size": 2377294, "package_uuid": "faa4c773-1dd0-4ae5-a2bb-bb85531363e7"});
+ loadPackage({"files": [{"start": 0, "audio": 0, "end": 3030, "filename": "/assets/Logo.png"}, {"start": 3030, "audio": 0, "end": 2377294, "filename": "/assets/JetBrainsMonoNLNerdFont-Regular.ttf"}], "remote_package_size": 2377294, "package_uuid": "ab1932af-6183-4eb1-a421-7776713bd99e"});
 
 })();
 
